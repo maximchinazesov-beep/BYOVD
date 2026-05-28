@@ -12,6 +12,7 @@ The goal of this project is to practice reverse engineering, understand Windows 
 
 ### 📁 Analyzed Drivers
 * **[Lenovo BootRepair (bootrepair.sys)](bootrepair/)** — Recent 1-day vulnerability allowing arbitrary process termination (`ZwTerminateProcess`) from Ring 0. Features dynamic analysis, clean C++ PoC source code, and full IDA Pro database.
+* **[WinRing0 (WinRing0x64.sys)](WinRing0/)** — Classic critical vulnerability enabling arbitrary MSR Read/Write (`__readmsr`/`__writemsr`) and raw I/O port access from Ring 0, leading to KASLR bypass and full Local Privilege Escalation (LPE). Features fully documented IDA Pro database.
 
 ---
 
@@ -23,6 +24,7 @@ The goal of this project is to practice reverse engineering, understand Windows 
 
 ### 📁 Разобранные драйверы
 * **[Lenovo BootRepair (bootrepair.sys)](bootrepair/)** — Свежая 1-day уязвимость, позволяющая принудительно завершать любые процессы (`ZwTerminateProcess`) из Ring 0. Внутри: технический отчет, чистый исходный код эксплойта на C++ и база данных IDA Pro.
+* **[WinRing0 (WinRing0x64.sys)](WinRing0/)** — Классическая критическая уязвимость, позволяющая выполнять произвольное чтение/запись MSR-регистров (`__readmsr`/`__writemsr`) и осуществлять прямой доступ к портам ввода-вывода из Ring 0, что приводит к обходу KASLR и полной локальной эскалации привилегий (LPE). В комплект входит полностью документированная база данных IDA Pro.
 
 ---
 
