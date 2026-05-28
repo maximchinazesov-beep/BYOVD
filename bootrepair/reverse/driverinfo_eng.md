@@ -47,5 +47,8 @@ Since the code executes at Ring 0, it completely bypasses the self-defense mecha
 * `/reverse` — IDA Pro database (`.i64`) with reconstructed variable names (`status`, `ProcessHandle`) and comments.
 * `/src` — C++ exploit source code (PoC) for demonstrating the vulnerability.
 
+  <img width="800" height="450" alt="showcase_bootrepair" src="https://github.com/user-attachments/assets/360712b0-5dfe-43f5-9d66-eb990653f9f1" />
+
+
 ## ⚠️ Disclaimer
 This research is published for educational purposes only, to demonstrate the operation of BYOVD mechanisms and improve reverse engineering skills. The author is not responsible for any damages caused by using these materials.
